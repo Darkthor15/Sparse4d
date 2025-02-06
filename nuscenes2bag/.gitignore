@@ -1,0 +1,11 @@
+*.bag
+*.tgz
+*.zip
+.ipynb_checkpoints
+.Trash-*
+data
+.DS_Store
+.vscode
+*.db3
+*.yaml
+.devcontainer/

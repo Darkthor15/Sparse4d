@@ -1,0 +1,14 @@
+*.pyc
+*.npy
+*.pth
+data/
+ckpt/
+log/
+projects/mmdet3d_plugin/ops/
+*.sqlite
+*.nsys-rep
+.devcontainer/
+.vscode/
+install/
+build/
+log/

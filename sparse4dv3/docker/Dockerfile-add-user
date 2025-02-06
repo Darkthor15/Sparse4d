@@ -1,0 +1,17 @@
+# Dockerfile for creating user
+
+ARG base=""
+FROM ${base}
+
+ARG user=""
+ARG uid=""
+ARG gid=""
+ARG pass=""
+RUN useradd -ms /bin/bash ${user} && \
+    echo "${user}:${pass}" | chpasswd && \
+    usermod -u ${uid} ${user} && \
+    groupmod -g ${gid} ${user} && \
+    adduser ${user} sudo
+
+USER ${user}
+WORKDIR /home/${user}
